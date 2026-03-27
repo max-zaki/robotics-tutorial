@@ -90,7 +90,7 @@ if __name__ == "__main__":
 
     # Test forward_kinematics() with all joints at 0 -- arm fully extended along X axis
 
-    angles = [0, 0, 0]
+    angles = [0.0, 0.0, 0.0]
     T = forward_kinematics(params, angles)
     print(f'T (all zeros):\n\n{np.round(T, 4)}\n')
     print(f'End-effector postion:\n\n{T[:3, 3]}\n\n')
@@ -110,6 +110,6 @@ if __name__ == "__main__":
 
     # Test joint_positions() for the all-zeros case:
 
-    angles = [0, 0, 0]
+    angles = [0.0, 0.0, 0.0]
     T = forward_kinematics(params, angles)
     print(f'Positions:\n\n{joint_positions(params, angles)}\n\n\n')
