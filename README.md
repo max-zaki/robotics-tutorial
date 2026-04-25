@@ -33,10 +33,6 @@ All projects are implemented in Python (with C++ introduced in the final phase) 
 ```
 robotics-tutorial/
 ├── 01_kinematics/
-│   └── project1_fk/
-│       ├── forward_kinematics.py       # Forward kinematics implementation
-│       └── forward_kinematics_notes.md # Concepts and theory notes
-├── 02_dynamics/
 ├── 03_control/
 ├── 04_ros2/
 ├── 05_capstone/
@@ -47,26 +43,6 @@ robotics-tutorial/
 ---
 
 ## Phase 01 — Kinematics
-
-### Project 1: Forward Kinematics
-
-**Goal:** Compute the position and orientation of a robot arm's end-effector given the angles of all its joints, using homogeneous transformation matrices and Denavit-Hartenberg (DH) parameters.
-
-**Concepts covered:**
-- Homogeneous transformation matrices
-- Denavit-Hartenberg (DH) parameters and convention
-- Building and chaining transformation matrices for a multi-joint arm
-- Computing end-effector position from joint angles
-
-**Dependencies:**
-- Python 3.10+
-- NumPy
-
-**How to run:**
-```bash
-cd 01_kinematics/project1_fk
-python3 forward_kinematics.py
-```
 
 ---
 
